@@ -1,0 +1,77 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #ccc; /* Light border for separation */
+    position: relative; /* Allows positioning of dropdowns, if any */
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a0b0b; /* Dark text color */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Space between nav links */
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Change cursor to pointer */
+    color: #333; /* Dark text color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-item:hover {
+    color: #4a0b0b; /* Change color on hover */
+}
+
+.navbar-icon {
+    margin-right: 5px; /* Space between icon and text */
+    color: #4a0b0b;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.search-icon {
+    margin-left: 5px; /* Space between input and icon */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        border-bottom: none;
+        color: transparent;
+    }
+    
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduced space between links */
+        margin-top: 10px; /* Space above the links */
+        width: 100%; /* Full width */
+    }
+
+    .search-bar {
+        width: 100%; /* Full width for search bar */
+        margin-top: 10px; /* Space above the search bar */
+    }
+}

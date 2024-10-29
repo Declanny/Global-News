@@ -1,0 +1,49 @@
+.blog-container {
+    padding: 20px;
+  }
+  
+  .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: space-between; /* Optional for better alignment */
+  }
+  
+  .blog-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.333% - 20px); /* 3 cards per row with space */
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  }
+  
+  .blog-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .blog-details {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-card {
+      width: calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-card {
+      width: 100%; /* 1 card per row on small screens */
+    }
+  }
+  
