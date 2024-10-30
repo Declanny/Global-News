@@ -1,0 +1,55 @@
+/* TechTrend.css */
+.tech-trend-container {
+    padding: 20px;
+  }
+  
+  .tech-trend-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .tech-trend-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.333% - 20px);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .tech-trend-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tech-trend-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .tech-trend-details {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .read-more {
+    color: #4a0b0b;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .tech-trend-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tech-trend-card {
+      width: 100%;
+    }
+  }
+  
